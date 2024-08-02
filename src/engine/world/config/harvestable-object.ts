@@ -143,7 +143,7 @@ const Ores: IHarvestable[] = [
         respawnLow: 5,
         respawnHigh: 10,
         baseChance: 70,
-        break: 100
+        break: 100,
     },
     {
         objects: COPPER_OBJECTS,
@@ -404,3 +404,41 @@ export function getTreeIds(): number[] {
     }
     return treeIds;
 }
+
+const FISH_OBJECTS: Map<number, number> = new Map<number, number>([
+    ...objectIds.fish.shrimp.map((fish) => [fish.default, fish.empty]),
+    ...objectIds.fish.sardine.map((fish) => [fish.default, fish.empty]),
+    ...objectIds.fish.herring.map((fish) => [fish.default, fish.empty]),
+    ...objectIds.fish.trout.map((fish) => [fish.default, fish.empty]),
+    ...objectIds.fish.salmon.map((fish) => [fish.default, fish.empty]),
+    ...objectIds.fish.tuna.map((fish) => [fish.default, fish.empty]),
+    ...objectIds.fish.lobster.map((fish) => [fish.default, fish.empty]),
+    ...objectIds.fish.swordfish.map((fish) => [fish.default, fish.empty]),
+    ...objectIds.fish.shark.map((fish) => [fish.default, fish.empty]),
+    ...objectIds.fish.mantaRay.map((fish) => [fish.default, fish.empty]),
+] as [number, number][]);
+
+const Fish: IHarvestable[] = [
+    {
+        objects: FISH_OBJECTS,
+        itemId: itemIds.fish.shrimp,
+        level: 1,
+        experience: 10,
+        respawnLow: 5,
+        respawnHigh: 10,
+        baseChance: 70,
+        break: 100,
+    },
+    // Add other fish configurations here...
+];
+
+export function getFishIds(): number[] {
+    const fishIds: number[] = [];
+    for (const fish of Fish) {
+        for (const [healthy] of fish.objects) {
+            fishIds.push(healthy);
+        }
+    }
+    return fishIds;
+}
+

@@ -1,6 +1,6 @@
 {
     "verbose": true,
-    "ignore": ["src/plugins/"],
+    "ignore": [],
     "watch": ["src/"],
     "ext": "ts, js"
 }

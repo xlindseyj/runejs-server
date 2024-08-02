@@ -23,6 +23,38 @@ export const objectIds = {
     crate: 357,
     skeletonLayingFlat: 5358,
     skeletonLayingAgainstWall: 5359,
+    fish: {
+        shrimp: [
+            { default: 1511, empty: 1512 },
+        ],
+        sardine: [
+            { default: 1513, empty: 1514 },
+        ],
+        herring: [
+            { default: 1515, empty: 1516 },
+        ],
+        trout: [
+            { default: 1517, empty: 1518 },
+        ],
+        salmon: [
+            { default: 1519, empty: 1520 },
+        ],
+        tuna: [
+            { default: 1521, empty: 1522 },
+        ],
+        lobster: [
+            { default: 1523, empty: 1524 },
+        ],
+        swordfish: [
+            { default: 1525, empty: 1526 },
+        ],
+        shark: [
+            { default: 1527, empty: 1528 },
+        ],
+        mantaRay: [
+            { default: 1529, empty: 1530 },
+        ],
+    },
     tree: {
         normal: [
             { default: 1276, stump: 1342 },

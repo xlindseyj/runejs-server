@@ -528,4 +528,16 @@ export const itemIds = {
             untrimmed: 9813,
         },
     },
+    fish: {
+        shrimp: 317,
+        sardine: 327,
+        herring: 345,
+        trout: 335,
+        salmon: 331,
+        tuna: 359,
+        lobster: 377,
+        swordfish: 371,
+        shark: 383,
+        mantaRay: 389,
+    }
 };
